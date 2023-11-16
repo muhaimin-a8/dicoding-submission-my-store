@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailProductActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/vp2_carousel"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            app:layout_constraintEnd_toEndOf="@id/constraint_layout"
+            app:layout_constraintStart_toStartOf="@id/constraint_layout"
+            app:layout_constraintTop_toTopOf="@id/constraint_layout" />
+
+        <TextView
+            android:id="@+id/tv_images_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#4D000000"
+            android:drawablePadding="4dp"
+            android:elevation="2dp"
+            android:padding="8dp"
+            android:text="6 images"
+            android:textColor="@android:color/white"
+            app:drawableLeftCompat="@drawable/ic_collections_white_18dp"
+            app:drawableStartCompat="@drawable/ic_collections_white_18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/vp2_carousel"
+            app:layout_constraintEnd_toEndOf="@id/constraint_layout"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@id/constraint_layout"
+            app:layout_constraintTop_toTopOf="@id/constraint_layout"
+            app:layout_constraintVertical_bias="1" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/product_price"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/constraint_layout"
+            app:layout_constraintStart_toStartOf="@+id/vp2_carousel"
+            app:layout_constraintTop_toBottomOf="@+id/vp2_carousel" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/green"
+            android:text="@string/product_title"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tv_price"
+            app:layout_constraintStart_toStartOf="@+id/tv_price"
+            app:layout_constraintTop_toBottomOf="@+id/tv_price" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/product_description"
+            app:layout_constraintEnd_toEndOf="@+id/tv_title"
+            app:layout_constraintStart_toStartOf="@+id/tv_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="317dp" />
+
+        <include
+            android:id="@+id/include_description"
+            layout="@layout/layout_product_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/constraint_layout"
+            app:layout_constraintStart_toStartOf="@id/constraint_layout"
+            app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+        <Button
+            android:id="@+id/btn_detail_buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/buy_now"
+            android:textAllCaps="true"
+            app:layout_constraintBottom_toBottomOf="@id/constraint_layout"
+            app:layout_constraintEnd_toEndOf="@id/constraint_layout"
+            app:layout_constraintStart_toStartOf="@id/constraint_layout"
+            app:layout_constraintTop_toBottomOf="@+id/include_description" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

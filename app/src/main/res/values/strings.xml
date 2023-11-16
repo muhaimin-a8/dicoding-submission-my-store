@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MyStore</string>
+    <string name="product_title">iPhone9</string>
+    <string name="product_description">An apple mobile which is nothing like apple</string>
+    <string name="product_price">$ 549</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="description">Description :</string>
+    <string name="brand">Brand</string>
+    <string name="content_desc_brand">Apple</string>
+    <string name="stock">Stock</string>
+    <string name="content_desc_stock">94</string>
+    <string name="category">Category</string>
+    <string name="content_desc_category">smartphone</string>
+    <string name="about_me">About Me</string>
+    <string name="author">Muhaimin Abdillah</string>
+    <string name="author_title"><![CDATA[BackEnd Developer & DevOps Engineer]]></string>
+    <string name="about_developer">About Developer</string>
+    <string name="author_email">muhaiminabdillah85@gmail.com</string>
+    <string name="share">Share</string>
+</resources>
